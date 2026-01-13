@@ -241,7 +241,7 @@ const castReceiverOptions = new cast.framework.CastReceiverOptions();
 /*
  * Enable shaka hls player
  */
-castReceiverOptions.useShakaForHls = true;
+//castReceiverOptions.useShakaForHls = true;
 
 /*
  * Set the player configuration.
