@@ -95,9 +95,14 @@ castDebugLogger.loggerLevelByTags[LOG_RECEIVER_TAG] =
 playerManager.addEventListener(
   cast.framework.events.EventType.ERROR, (event) => {
     castDebugLogger.error(LOG_RECEIVER_TAG,
-      'Error Event Full Description - ' + event);
-    castDebugLogger.error(LOG_RECEIVER_TAG,
       'Detailed Error Code - ' + event.detailedErrorCode);
+    castDebugLogger.error(LOG_RECEIVER_TAG,
+      'Ended Reason Code - ' + event.endedReason);
+    castDebugLogger.error(LOG_RECEIVER_TAG,
+      'Error Severity Code - ' + event.severity);
+    castDebugLogger.error(LOG_RECEIVER_TAG,
+      'Error Event Type - ' + event.type);
+
     if (event && event.detailedErrorCode == 905) {
       castDebugLogger.error(LOG_RECEIVER_TAG,
         'LOAD_FAILED: Verify the load request is set up ' +
