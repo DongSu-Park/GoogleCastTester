@@ -1,6 +1,7 @@
 # CastReceiver Debug
 
-해당 샘플을 구글 크롬캐스트 디버깅을 위한 구글에서 제공하는 웹 캐스트 리시버 입니다.
+해당 샘플은 구글 크롬캐스트 디버깅을 위한 구글에서 제공하는 웹 캐스트 리시버 입니다.
+웹 호스팅은 Github Actions 으로 진행하고 있습니다.
 
 아래의 내용은 구글 샘플 [CastReceiver](https://github.com/googlecast/CastReceiver) 의 전문 README 입니다.
 
