@@ -95,6 +95,8 @@ castDebugLogger.loggerLevelByTags[LOG_RECEIVER_TAG] =
 playerManager.addEventListener(
   cast.framework.events.EventType.ERROR, (event) => {
     castDebugLogger.error(LOG_RECEIVER_TAG,
+      'Error Event Full Description - ' + event);
+    castDebugLogger.error(LOG_RECEIVER_TAG,
       'Detailed Error Code - ' + event.detailedErrorCode);
     if (event && event.detailedErrorCode == 905) {
       castDebugLogger.error(LOG_RECEIVER_TAG,
