@@ -71,10 +71,10 @@ const LOG_RECEIVER_TAG = 'Receiver';
   playerManager.setMessageInterceptor(
         cast.framework.messages.MessageType.LOAD,
         (loadRequestData) => {
-          console.log('[Custom LOAD intercepted]', JSON.stringify(loadRequestData, null, 2));
+        castDebugLogger.warn(PlayerManager LOAD intercepted, JSON.stringify(loadRequestData, null, 2))
           // 여기서 media url / customData / contentType 등을 확인 가능
-          return loadRequestData; // 그대로 진행
-        }
+        return loadRequestData; // 그대로 진행
+     }
    );
 
 
