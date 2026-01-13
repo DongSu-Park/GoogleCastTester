@@ -101,7 +101,7 @@ playerManager.addEventListener(
         'LOAD_FAILED: Verify the load request is set up ' +
         'properly and the media is able to play.');
     }
-});
+}); // todo 311, 905 에러 발생
 
 /*
  * Example analytics tracking implementation. To enable this functionality see
@@ -237,6 +237,11 @@ controls.assignButton(
  * Configure the CastReceiverOptions.
  */
 const castReceiverOptions = new cast.framework.CastReceiverOptions();
+
+/*
+ * Enable shaka hls player
+ */
+castReceiverOptions.useShakaForHls = true;
 
 /*
  * Set the player configuration.
