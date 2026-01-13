@@ -97,11 +97,11 @@ playerManager.addEventListener(
     castDebugLogger.error(LOG_RECEIVER_TAG,
       'Detailed Error Code - ' + event.detailedErrorCode);
     castDebugLogger.error(LOG_RECEIVER_TAG,
-      'Ended Reason Code - ' + event.endedReason);
+      'Ended Reason Code - ' + event.reason);
     castDebugLogger.error(LOG_RECEIVER_TAG,
       'Error Severity Code - ' + event.severity);
     castDebugLogger.error(LOG_RECEIVER_TAG,
-      'Error Event Type - ' + event.type);
+      'Error Event - ' + event.error);
 
     if (event && event.detailedErrorCode == 905) {
       castDebugLogger.error(LOG_RECEIVER_TAG,
